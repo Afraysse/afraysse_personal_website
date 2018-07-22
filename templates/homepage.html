@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+.homepage-title {
+  padding-top: 2em;
+  font-family: 'Raleway Dots', cursive;
+  font-size: 20pt;
+  font-weight: bolder;
+}
+
+#space {
+  padding-top: 3em;
+}
+
+.card-title {
+  font-family: 'Raleway Dots', cursive;
+}
+</style>
+<body>
+  <div class="homepage-title">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg text-center">
+          <h2><span class="ion-minus"></span>ANNE J FRAYSSE<span class="ion-minus"></span></h2>
+          <h4><span class="ion-minu"></span>Full Stack Software Engineer + Quality Assurance Engineer<span class="ion-minus"></span></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row" id="space">
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <a href="/projects"><img class="card-img-top" href="/projects" src="./static/src/leaf.jpg" alt="Card image cap"></a>
+          <div class="card-body">
+            <h5 class="card-title text-center">Projects</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <a href="/me"><img class="card-img-top" src="./static/src/zebra.jpg" alt="Card image cap"></a>
+          <div class="card-body">
+            <h5 class="card-title text-center">About Me + Contact</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <a href="/blog"><img class="card-img-top" src="./static/src/dragonfly.jpg" alt="Card image cap"></a>
+          <div class="card-body">
+            <h5 class="card-title text-center">Blog</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+{% endblock %}

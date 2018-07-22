@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<style>
+
+.page-title {
+  padding-top: .5em;
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  padding-right: 2em;
+
+}
+
+.card-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+}
+
+.sr-only {
+  color: black;
+}
+
+.card {
+  border-color: white;
+}
+
+.card-text {
+  font-family: 'EB Garamond', serif;
+}
+
+ #tech-stack {
+   padding-top: 19em;
+   padding-bottom: 3em;
+ }
+
+hr {
+   display: block;
+   position: relative;
+   padding: 0;
+   margin: 8px auto;
+   height: 0;
+   width: 50%;
+   max-height: 0;
+   font-size: 1px;
+   line-height: 0;
+   clear: both;
+   border: none;
+   border-top: 1px solid #aaaaaa;
+   border-bottom: 1px solid #ffffff;
+}
+
+form {
+  font-family: 'EB Garamond', serif;
+}
+
+#submit-button {
+  font-size: 14px;
+  color: gray;
+}
+
+h2 {
+  align-items: center;
+}
+
+</style>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="page-title text-center">Annie J. Fraysse</h1>
+        <hr>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title text-center">FAST FACTS</h5>
+            <p class="card-text">A Boston transplant, originally from the San Francisco Bay Area.</p>
+            <p class="card-text">Full stack engineer currently working as a SET (Software Engineer in Test).</p>
+            <p class="card-text">Current Head Coxswain for the MIT Rowing Club.</p>
+            <p class="card-text">Loves food, California wine and dogs.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="container" id="tech-stack">
+          <div class="card" style="width: 18rem;">
+            <h2 class="text-center">
+                <a href="https://twitter.com/ajfraysse" target="_blank">
+                    <span class="sr-only">Twitter</span>
+                    <i class="fab fa-twitter" style="color:black" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/anniefraysse" target="_blank">
+                    <span class="sr-only">Instagram</span>
+                    <i class="fab fa-instagram" style="color:black" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/Afraysse" target="_blank">
+                    <span class="sr-only">GitHub</span>
+                    <i class="fab fa-github" style="color:black" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/annefraysse" target="_blank">
+                    <span class="fab fa-linkedin"  style="color:black"aria-hidden="true"></i>
+                </a>
+              </h2>
+            <div class="card-title text-center">OR DROP ME A LINE</div>
+              <form>
+                <div class="form-group align-center">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message here." rows="3"></textarea>
+                </div>
+                <button type="submit" id="submit-button" class="btn btn-outline-light btn-lg btn-block">SUBMIT</button>
+              </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="container">
+          <div class="card" style="width: 18rem;">
+            <div class="card-title text-center">TECH STACK</div>
+              <p class="card-text text-center">Python . JavaScript</p>
+              <p class="card-text text-center">Flask . NodeJS . ReactJS . AngularJS</p>
+              <p class="card-text text-center">Postgres . PostgresSQL . SQLAlchemy</p>
+              <p class="card-text text-center">WebdriverIO . Protractor . Chimp . Selenium . Jest . Cucumber . Jasmine</p>
+              <p class="card-text text-center">Mocha . Cypress</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</body>
+
+
+
+{% endblock %}
